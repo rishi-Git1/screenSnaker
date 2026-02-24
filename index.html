@@ -8,6 +8,28 @@
   </head>
   <body>
     <main class="app">
+      <div class="controls" id="controlsPanel" aria-label="Display controls">
+        <label class="control-item" for="appleCountSelect">
+          Apples
+          <select id="appleCountSelect">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+
+        <label class="control-item" for="themeSelect">
+          Theme
+          <select id="themeSelect">
+            <option value="neon" selected>Neon</option>
+            <option value="sunset">Sunset</option>
+            <option value="mono">Monochrome</option>
+          </select>
+        </label>
+      </div>
+
       <canvas id="gameCanvas" width="1000" height="1000" aria-label="Autoplaying snake game"></canvas>
       <div id="pauseOverlay" class="pause-overlay" aria-hidden="true">Paused</div>
     </main>
